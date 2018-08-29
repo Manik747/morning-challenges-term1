@@ -1,10 +1,31 @@
 # 1. If you're sitting next to the same person you sat next
 #    to yesterday, go sit next to someone else.
-#
+# I am one of the knights that say ne!
 # 2. A business called “The Company” created a new phone called 
 #    the companyPhone that needs packing to send away for sale. 
-#
-#    The companyPhone in its pretty new packaging 
+phone_dim= {"width" => 5, "length" => 7.4, "depth"=>4}
+phone_volume =(phone_dim["width"] * phone_dim["length"] * phone_dim["depth"])
+    puts "the volume of the phone packaging #{phone_volume.to_i}cm"
+
+box_dim= {"width" => 32, "length" => 43, "depth"=>22.1}
+box_volume= (box_dim["width"] * box_dim["length"] * box_dim["depth"])
+    puts "the volume of the phone packaging #{box_volume.to_i}cm"
+number_phones= (box_volume / phone_volume)
+    puts "you can fit #{number_phones.to_i}"
+
+# a better solution
+one=(box_dim["width"]/phone_dim["width"]).to_i
+puts one
+two=(box_dim["length"]/phone_dim["length"]).to_i
+puts two
+thr=(box_dim["depth"]/phone_dim["depth"]).to_i
+puts thr
+puts (one * two * thr).to_i
+
+
+
+
+#   The companyPhone in its pretty new packaging 
 #    (rectangular prism) measures as follows: 
 #       width: 5cm
 #       length: 7.4cm 
