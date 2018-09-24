@@ -6,7 +6,7 @@ git checkout master
 # Sync master:
 git add . && git commit -m "sync master" && git push -f origin master
 # checkout/create challenge branch
-git checkout -b $1
+git checkout -b 21_page_title
 # pull morning challenge
 git pull --no-edit --allow-unrelated-histories morning $1
 # if any conflicts:
