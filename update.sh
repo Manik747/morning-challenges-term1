@@ -1,5 +1,5 @@
 # Script to pull the morning challenge and merge to master
-# Pass the branch name as the first param, eg. ./update.sh 07_fib_seq_01.rb
+# Pass the branch name as the first param, eg. ./get-morning-challenge.sh 07_fib_seq_01.rb
 echo "Getting morning challenge $1 ..."
 # Make sure you're on master branch
 git checkout master
