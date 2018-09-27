@@ -8,6 +8,17 @@
 # ('3S') -> return 'spades'
 
 def define_suit(card)
-  # Good luck
+  suit = card[-1]
+  case suit
+  when "C"
+    return "Clubs"
+  when "S"
+    return "Spade"
+  when "D"
+    return "Diamond"
+  when "H"
+    return "Heart"
+  end
 end
 
+puts define_suit("3H")
