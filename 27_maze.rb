@@ -1,3 +1,5 @@
+require 'matrix'
+
 class Maze
     def initialize(maze)
         
@@ -9,3 +11,5 @@ class Maze
 
     end
 end
+
+
