@@ -30,10 +30,36 @@
 # The columns are numbered 0-6 left to right.
 
 class Connect4
+   
   def initialize
-    #your code here
+      @board = default_state
   end
-  def play(column)
-    #your code here
-  end  
-end
+
+  def default_state
+   return [
+    ["0", "0", "0", "0", "0", "0", "0"],
+    ["0", "0", "0", "0", "0", "0", "0"],
+    ["0", "0", "0", "0", "0", "0", "0"],
+    ["0", "0", "0", "0", "0", "0", "0"],
+    ["0", "0", "0", "0", "0", "0", "0"],
+    ["0", "0", "0", "0", "0", "0", "0"],
+    [1,2,3,4,5,6,7]
+    ]
+      #last array refers to the 
+  end
+
+  def render
+      @board.each_with_index do | row, index |
+      end 
+  end
+
+  def player1
+
+  end
+
+  def player2
+
+  end
+
+         
+
